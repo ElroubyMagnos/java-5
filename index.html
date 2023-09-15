@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Practise #4 (Multipage)</title>
+    <link rel="stylesheet" href="css/my.css">
+</head>
+<body>
+    <nav>
+        <span id="threelines"><img onclick="var x = document.querySelector('nav ul');x.style.display = x.style.display === 'none' ? 'block' : 'none';" src="/images/3l.jpg" alt=""></span>
+        <ul>
+            <li style="animation: bright linear 5s forwards;margin-right: auto;font-weight: bolder;font-size: 30px;">Magnos</li>
+            <li class="color" data-index = "0"></li>
+            <li class="color" data-index = "1"></li>
+            <li class="color" data-index = "2"></li>
+            <li><button onclick="Dynamics.CurrentPage = 1;LoadPage();">Home</button></li>
+            <li><button onclick="Dynamics.CurrentPage = 2;LoadPage();">About</button></li>
+            <li><button onclick="Dynamics.CurrentPage = 3;LoadPage();">Privacy</button></li>
+            <li><button onclick="Dynamics.CurrentPage = 4;LoadPage();">Chat</button></li>
+        </ul>
+    </nav>
+
+    <div id="firstpage">
+        <div class="containerone">
+            <img class="open" src="/images/landing-1.jpg" alt="">
+            <div>
+                <h1>Buy from Us Now</h1>
+                <p>You will never find a better place in selling the products</p>
+                <p>Tune in to the Make it Big Podcast — our thought leadership audio series for retailers, entrepreneurs and ecommerce professionals. You'll get expert insights, strategies and tactics to help grow your business.</p>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, a sapiente unde dolorum vero rerum aliquam impedit ex, vitae eligendi quos exercitationem reprehenderit accusamus quasi! Ipsa, dolor alias. Possimus, architecto.</span>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="leftpanel">
+                <h1>Get the best From us Now</h1>
+                <p>Beatae fugit fugiat ullam distinctio ducimus quis! Expedita amet id veritatis architecto sapiente delectus porro a eveniet explicabo, odit eum quibusdam ullam!</p>
+            </div>
+            <div class="rightpanel">
+                <h1>Best Company on your mind</h1>
+                <p>Maxime facere nulla voluptas distinctio officia ipsum sed. Numquam excepturi molestias inventore tempora. Nemo beatae quisquam quaerat dolorum omnis excepturi praesentium. Rerum?</p>
+            </div>
+        </div>
+
+        <div id="bb">
+
+        </div>
+
+        <div id="scrolling">
+            
+        </div>
+    </div>
+
+     <div id="secondpage">
+        <img src="/images/about.jpg" alt="">
+        <div class="aboutdata">
+            <h1>About</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis fuga error. Officiis fuga error Officiis fuga error</p>
+        </div>
+    </div>
+
+     <div id="thirdpage">
+        <div class="privacypolicy">
+            <h1>Privacy Policy</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium nostrum dignissimos eaque ullam inventore qui doloremque, repellendus officia consectetur quod, soluta quaerat iure odit tempore incidunt minima voluptates! Veniam, sed! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptas quos veniam laudantium neque. Illum sed, quod ipsa ex veniam eligendi nisi optio nobis molestiae voluptatum sequi soluta, provident dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae doloribus unde veniam minus labore nulla aut modi? Eos dicta omnis repudiandae quae ducimus quisquam cum, reprehenderit, architecto et facilis quam!</p>
+            <img src="images/picon.png" alt="">
+        </div>
+    </div>
+
+     <div id="fourthpage">
+        <textarea></textarea>
+        <div class="send">
+            <input type="text" placeholder="Enter your Message">
+            <button>Send</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
